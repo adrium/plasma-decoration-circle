@@ -1,20 +1,22 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" version="1.1">
 	<defs>
-		<linearGradient id="gradient-glow" gradientTransform="rotate(90)">
+		<circle id="background" cx="8" cy="8" r="8" fill="#da4453"/>
+		<path id="symbol" d="M 5,5 l 6,6 M 5,11 l 6,-6" fill="none" stroke="#000" stroke-width="2" stroke-opacity="0.45" stroke-linecap="round"/>
+		<linearGradient id="gradient-glow">
 			<stop style="stop-color:#fff;stop-opacity:1" offset="0"/>
 			<stop style="stop-color:#fff;stop-opacity:0" offset="0.8"/>
 		</linearGradient>
 	</defs>
 	<g id="active-center" transform="translate(-20)">
-		<circle id="background" cx="8" cy="8" r="8" fill="#da4453"/>
-		<circle id="glow" cx="8" cy="8" r="7" fill="url(#gradient-glow)" opacity="0.2"/>
+		<use xlink:href="#background"/>
+		<circle id="glow" cx="8" cy="8" r="7" fill="url(#gradient-glow)" opacity="0.2" transform="rotate(90,8,8)"/>
 		<circle id="border" cx="8" cy="8" r="7.5" fill="none" stroke="#000" stroke-width="1" stroke-opacity="0.25"/>
 	</g>
 	<g id="hover-center">
 		<use xlink:href="#background"/>
 		<use xlink:href="#glow"/>
 		<use xlink:href="#border"/>
-		<path id="symbol" d="M 5,5 l 6,6 M 5,11 l 6,-6" fill="none" stroke="#000" stroke-width="2" stroke-opacity="0.45" stroke-linecap="round"/>
+		<use xlink:href="#symbol"/>
 	</g>
 	<g id="pressed-center" transform="translate(20)">
 		<use xlink:href="#background"/>

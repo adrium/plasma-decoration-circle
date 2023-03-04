@@ -23,7 +23,7 @@
 		</style>
 		<style>
 			.glow { fill: url(#gradient-glow); opacity: 0.12 }
-			.darken { fill: #000; opacity: 0.1 }
+			.darken { fill: #000; opacity: 0.0 }
 			.shadow.inactive { opacity: 0.1 }
 			.shadow.active { opacity: 0.7 }
 			.shadow.radial { fill: url(#gradient-radialshadow) }
