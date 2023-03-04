@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" version="1.1">
+	<defs>
+		<linearGradient id="gradient-glow" gradientTransform="rotate(90)">
+			<stop style="stop-color:#fff;stop-opacity:1" offset="0"/>
+			<stop style="stop-color:#fff;stop-opacity:0" offset="0.8"/>
+		</linearGradient>
+	</defs>
+	<g id="active-center" transform="translate(-20)">
+		<circle id="background" cx="8" cy="8" r="8" fill="#2ecc71"/>
+		<circle id="glow" cx="8" cy="8" r="7" fill="url(#gradient-glow)" opacity="0.2"/>
+		<circle id="border" cx="8" cy="8" r="7.5" fill="none" stroke="#000" stroke-width="1" stroke-opacity="0.25"/>
+	</g>
+	<g id="hover-center">
+		<use xlink:href="#background"/>
+		<use xlink:href="#glow"/>
+		<use xlink:href="#border"/>
+		<circle id="symbol" cx="8" cy="8" r="3" fill="none" stroke="#000" stroke-width="2" stroke-opacity="0.45" stroke-linecap="round"/>
+	</g>
+	<g id="pressed-center" transform="translate(20)">
+		<use xlink:href="#background"/>
+		<circle cx="8" cy="8" r="8" fill="#000" opacity="0.25"/>
+		<use xlink:href="#symbol"/>
+	</g>
+	<g id="inactive-center" transform="translate(40)">
+		<circle cx="8" cy="8" r="8" fill="#fff" opacity="0.25"/>
+		<use xlink:href="#border"/>
+	</g>
+	<g id="hover-inactive-center" transform="translate(60)">
+		<circle cx="8" cy="8" r="8" fill="#fff" opacity="0.5"/>
+		<use xlink:href="#border"/>
+		<use xlink:href="#symbol"/>
+	</g>
+</svg>

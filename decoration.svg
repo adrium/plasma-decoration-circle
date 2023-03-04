@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="400" height="400" version="1.1">
+	<defs>
+		<linearGradient id="gradient-glow" gradientTransform="rotate(90)">
+			<stop style="stop-color:#fff;stop-opacity:1" offset="0"/>
+			<stop style="stop-color:#fff;stop-opacity:0" offset="1"/>
+		</linearGradient>
+		<linearGradient id="gradient-linearshadow" gradientTransform="rotate(90)">
+			<stop style="stop-color:#000;stop-opacity:0" offset="0"/>
+			<stop style="stop-color:#000;stop-opacity:0.071" offset="0.3"/>
+			<stop style="stop-color:#000;stop-opacity:0.218" offset="0.5"/>
+			<stop style="stop-color:#000;stop-opacity:0.456" offset="0.7"/>
+			<stop style="stop-color:#000;stop-opacity:1" offset="1"/>
+		</linearGradient>
+		<radialGradient id="gradient-radialshadow" cx="1" cy="1" r="1">
+			<stop style="stop-color:#000;stop-opacity:1" offset="0"/>
+			<stop style="stop-color:#000;stop-opacity:0.456" offset="0.3"/>
+			<stop style="stop-color:#000;stop-opacity:0.218" offset="0.5"/>
+			<stop style="stop-color:#000;stop-opacity:0.071" offset="0.7"/>
+			<stop style="stop-color:#000;stop-opacity:0" offset="1"/>
+		</radialGradient>
+		<style id="current-color-scheme">
+			.ColorScheme-Background { color: #999 }
+		</style>
+		<style>
+			.glow { fill: url(#gradient-glow); opacity: 0.12 }
+			.darken { fill: #000; opacity: 0.1 }
+			.shadow.inactive { opacity: 0.1 }
+			.shadow.active { opacity: 0.7 }
+			.shadow.radial { fill: url(#gradient-radialshadow) }
+			.shadow.linear { fill: url(#gradient-linearshadow) }
+			.border { fill: none; stroke-width: 1; stroke-linecap: square }
+			.border.inner { stroke: #fff; stroke-opacity: 0.3 }
+			.border.outer { stroke: #000; stroke-opacity: 0.3 }
+		</style>
+	</defs>
+	<g id="decorations-inactive" inkscape:groupmode="layer" transform="translate(400)">
+		<g id="decoration-inactive-topleft">
+			<rect x="0" y="0" width="50" height="50" transform="scale(1,1.2)" class="inactive shadow radial"/>
+			<path d="M 40,60 m 0.5,-0.5 v -24.5 c 0,-2.5 2,-4.5 4.5,-4.5 h 4.5 v 29 z"
+				class="ColorScheme-Background" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+			<path d="M 41 60 v -24.5 c 0,-2.5 2,-4.5 4.5,-4.5 h 4.5 v 29 z" class="darken"/>
+			<path d="M 40,60 m 0.5,-0.5 v -24.5 c 0,-2.5 2,-4.5 4.5,-4.5 h 4.5" class="outer border"/>
+		</g>
+		<g id="decoration-inactive-top">
+			<rect x="50" y="0" width="300" height="60" class="inactive shadow linear"/>
+			<rect x="50" y="30" width="300" height="30" class="ColorScheme-Background" fill="currentColor"/>
+			<rect x="50" y="31" width="300" height="29" class="darken"/>
+			<path d="M 50,30 m 0.5,0.5 h 299" class="outer border"/>
+		</g>
+		<g id="decoration-inactive-topright">
+			<use xlink:href="#decoration-inactive-topleft" transform="translate(400) scale(-1,1)"/>
+		</g>
+		<g id="decoration-inactive-left">
+			<rect x="0" y="0" width="240" height="50" transform="translate(0,300) rotate(-90)" class="inactive shadow linear"/>
+			<rect x="40" y="60" width="10" height="240" class="ColorScheme-Background" fill="currentColor"/>
+			<rect x="41" y="60" width="9" height="240" class="darken"/>
+			<path d="M 40, 60 m 0.5,0.5 v 239" class="outer border"/>
+		</g>
+		<g id="decoration-inactive-right">
+			<use xlink:href="#decoration-inactive-left" transform="translate(400) scale(-1,1)"/>
+		</g>
+		<g id="decoration-inactive-bottomleft">
+			<rect x="0" y="0" width="50" height="50" transform="translate(0,400) scale(1,-2)" class="inactive shadow radial"/>
+			<path d="M 40,300 m 0.5,0.5 v 4.5 c 0,2.5 2,4.5 4.5,4.5 h 4.5 v -9 z"
+				class="ColorScheme-Background" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+			<path d="M 41 300 v 4.5 c 0,2.5 2,4.5 4.5,4.5 h 4.5 v -9z" class="darken"/>
+			<path d="M 40,300 m 0.5,0.5 v 4.5 c 0,2.5 2,4.5 4.5,4.5 h 4.5" class="outer border"/>
+		</g>
+		<g id="decoration-inactive-bottom">
+			<rect x="50" y="0" width="300" height="100" transform="translate(0,400) scale(1,-1)" class="inactive shadow linear"/>
+			<rect x="50" y="300" width="300" height="10" class="ColorScheme-Background" fill="currentColor"/>
+			<rect x="50" y="300" width="300" height="9" class="darken"/>
+			<path d="M 50,310 m 0.5,-0.5 h 299" class="outer border"/>
+		</g>
+		<g id="decoration-inactive-bottomright">
+			<use xlink:href="#decoration-inactive-bottomleft" transform="translate(400) scale(-1,1)"/>
+		</g>
+		<g id="decoration-inactive-center">
+			<rect class="ColorScheme-Background" x="50" y="60" width="300" height="240" fill="currentColor"/>
+			<rect x="50" y="60" width="300" height="240" class="darken"/>
+		</g>
+	</g>
+	<g id="decorations" inkscape:groupmode="layer">
+		<g id="decoration-topleft">
+			<rect x="0" y="0" width="50" height="50" transform="scale(1,1.2)" class="active shadow radial"/>
+			<path d="M 40,60 m 0.5,-0.5 v -24.5 c 0,-2.5 2,-4.5 4.5,-4.5 h 4.5 v 29 z"
+				class="ColorScheme-Background" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+			<path d="M 41 60 v -24.5 c 0,-2.5 2,-4.5 4.5,-4.5 h 4.5 v 29 z" class="glow"/>
+			<path d="M 40,60 m 0.5,-0.5 v -23.5 c 0,-2.5 2,-4.5 4.5,-4.5 h 4.5" class="inner border"/>
+			<path d="M 40,60 m 0.5,-0.5 v -24.5 c 0,-2.5 2,-4.5 4.5,-4.5 h 4.5" class="outer border"/>
+		</g>
+		<g id="decoration-top">
+			<rect x="50" y="0" width="300" height="60" class="active shadow linear"/>
+			<rect x="50" y="30" width="300" height="30" class="ColorScheme-Background" fill="currentColor"/>
+			<rect x="50" y="31" width="300" height="29" class="glow"/>
+			<path d="M 50,31 m 0.5,0.5 h 299" class="inner border"/>
+			<path d="M 50,30 m 0.5,0.5 h 299" class="outer border"/>
+		</g>
+		<g id="decoration-topright">
+			<use xlink:href="#decoration-topleft" transform="translate(400) scale(-1,1)"/>
+		</g>
+		<g id="decoration-left">
+			<rect x="0" y="0" width="240" height="50" transform="translate(0,300) rotate(-90)" class="active shadow linear"/>
+			<rect x="40" y="60" width="10" height="240" class="ColorScheme-Background" fill="currentColor"/>
+			<path d="M 40, 60 m 0.5,0.5 v 239" class="inner border"/>
+			<path d="M 40, 60 m 0.5,0.5 v 239" class="outer border"/>
+		</g>
+		<g id="decoration-right">
+			<use xlink:href="#decoration-left" transform="translate(400) scale(-1,1)"/>
+		</g>
+		<g id="decoration-bottomleft">
+			<rect x="0" y="0" width="50" height="50" transform="translate(0,400) scale(1,-2)" class="active shadow radial"/>
+			<path d="M 40,300 m 0.5,0.5 v 4.5 c 0,2.5 2,4.5 4.5,4.5 h 4.5 v -9 z"
+				class="ColorScheme-Background" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+			<path d="M 40,300 m 0.5,0.5 v 4.5 c 0,2.5 2,4.5 4.5,4.5 h 4.5" class="inner border"/>
+			<path d="M 40,300 m 0.5,0.5 v 4.5 c 0,2.5 2,4.5 4.5,4.5 h 4.5" class="outer border"/>
+		</g>
+		<g id="decoration-bottom">
+			<rect x="50" y="0" width="300" height="100" transform="translate(0,400) scale(1,-1)" class="active shadow linear"/>
+			<rect x="50" y="300" width="300" height="10" class="ColorScheme-Background" fill="currentColor"/>
+			<path d="M 50,310 m 0.5,-0.5 h 299" class="inner border"/>
+			<path d="M 50,310 m 0.5,-0.5 h 299" class="outer border"/>
+		</g>
+		<g id="decoration-bottomright">
+			<use xlink:href="#decoration-bottomleft" transform="translate(400) scale(-1,1)"/>
+		</g>
+		<g id="decoration-center">
+			<rect class="ColorScheme-Background" x="50" y="60" width="300" height="240" fill="currentColor"/>
+		</g>
+	</g>
+</svg>
