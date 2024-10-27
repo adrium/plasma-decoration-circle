@@ -1,6 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" version="1.1">
 	<defs>
-		<circle id="background" cx="8" cy="8" r="8" fill="#1d99f3"/>
+		<style id="current-color-scheme">
+			.ColorScheme-ComplementaryFocus { color: #1e92ff }
+		</style>
+		<circle id="background" cx="8" cy="8" r="8" class="ColorScheme-ComplementaryFocus" fill="currentColor"/>
 		<circle id="symbol" cx="8" cy="8" r="4" fill="#000" opacity="0.45"/>
 		<linearGradient id="gradient-glow">
 			<stop style="stop-color:#fff;stop-opacity:1" offset="0"/>

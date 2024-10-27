@@ -1,6 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" version="1.1">
 	<defs>
-		<circle id="background" cx="8" cy="8" r="8" fill="#da4453"/>
+		<style id="current-color-scheme">
+			.ColorScheme-ComplementaryNegativeText { color: #e74c3c }
+		</style>
+		<circle id="background" cx="8" cy="8" r="8" class="ColorScheme-ComplementaryNegativeText" fill="currentColor"/>
 		<path id="symbol" d="M 5,5 l 6,6 M 5,11 l 6,-6" fill="none" stroke="#000" stroke-width="2" stroke-opacity="0.45" stroke-linecap="round"/>
 		<linearGradient id="gradient-glow">
 			<stop style="stop-color:#fff;stop-opacity:1" offset="0"/>

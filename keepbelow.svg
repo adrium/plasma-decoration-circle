@@ -1,6 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" version="1.1">
 	<defs>
-		<circle id="background" cx="8" cy="8" r="8" fill="#9b59b6"/>
+		<style id="current-color-scheme">
+			.ColorScheme-ComplementaryNegativeText { color: #e74c3c }
+			.ColorScheme-ComplementaryFocus { color: #1e92ff }
+		</style>
+		<g id="background">
+			<circle cx="8" cy="8" r="8" class="ColorScheme-ComplementaryNegativeText" fill="currentColor"/>
+			<circle cx="8" cy="8" r="8" class="ColorScheme-ComplementaryFocus" fill="currentColor" opacity="0.5"/>
+		</g>
 		<path id="symbol" d="M 5,7 h 6 l -3,3 z" fill="none" stroke="#000" stroke-width="2" stroke-opacity="0.45" stroke-linejoin="round"/>
 		<linearGradient id="gradient-glow">
 			<stop style="stop-color:#fff;stop-opacity:1" offset="0"/>
