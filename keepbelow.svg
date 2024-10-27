@@ -9,14 +9,14 @@
 			<circle cx="8" cy="8" r="8" class="ColorScheme-ComplementaryFocus" fill="currentColor" opacity="0.5"/>
 		</g>
 		<path id="symbol" d="M 5,7 h 6 l -3,3 z" fill="none" stroke="#000" stroke-width="2" stroke-opacity="0.45" stroke-linejoin="round"/>
-		<linearGradient id="gradient-glow">
+		<linearGradient id="gradient-glow" x2="0" y2="1">
 			<stop style="stop-color:#fff;stop-opacity:1" offset="0"/>
 			<stop style="stop-color:#fff;stop-opacity:0" offset="0.8"/>
 		</linearGradient>
 	</defs>
 	<g id="active-center" transform="translate(-20)">
 		<use xlink:href="#background"/>
-		<circle id="glow" cx="8" cy="8" r="7" fill="url(#gradient-glow)" opacity="0.2" transform="rotate(90,8,8)"/>
+		<circle id="glow" cx="8" cy="8" r="7" fill="url(#gradient-glow)" opacity="0.33"/>
 		<circle id="border" cx="8" cy="8" r="7.5" fill="none" stroke="#000" stroke-width="1" stroke-opacity="0.25"/>
 	</g>
 	<g id="hover-center">
